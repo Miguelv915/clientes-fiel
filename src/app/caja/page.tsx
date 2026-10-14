@@ -36,7 +36,7 @@ export default function CajaEscanear() {
         ))}
       </div>
 
-      <Scanner texto={actual.texto} />
+      <Scanner texto={actual.texto} onDetect={() => router.push("/caja/confirmar")} />
 
       <form
         className="flex gap-3"
